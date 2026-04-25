@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chato's Cafecito Canino</title>
+    <meta name="description" content="Cafetería pet-friendly en Zapopan. Menú para humanos y peluditos." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="#hero" class="brand">
+          <span class="brand-mark">🐾</span>
+          <span class="brand-name">Chato's<span class="brand-sub"> Cafecito Canino</span></span>
+        </a>
+        <nav class="nav-links">
+          <a href="#about" data-i18n="nav.about">Nosotros</a>
+          <a href="#menu" data-i18n="nav.menu">Menú</a>
+          <a href="#hours" data-i18n="nav.hours">Horarios</a>
+          <a href="#location" data-i18n="nav.location">Ubicación</a>
+        </nav>
+        <div class="lang-wrapper">
+          <label for="langSelect" class="sr-only" data-i18n="nav.language">Idioma</label>
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
+            <!-- Filled by JS -->
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería pet-friendly</p>
+            <h1 data-i18n="hero.title">Un cafecito para ti<br />y tu peludito.</h1>
+            <p class="lead" data-i18n="hero.subtitle">
+              Sándwiches caseros, café de especialidad y un menú especial para los más consentidos de la casa.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#menu" data-i18n="hero.ctaMenu">Ver el menú</a>
+              <a class="btn btn-ghost" href="#location" data-i18n="hero.ctaVisit">Visítanos</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <div class="paw-bg">
+              <span>🐶</span>
+              <span>☕</span>
+              <span>🥐</span>
+              <span>🐾</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div>
+            <h2 data-i18n="about.title">Sobre Chato's</h2>
+            <p data-i18n="about.body">
+              En Chato's creemos que los mejores momentos se viven en compañía. Por eso preparamos cada platillo con cariño,
+              tanto para ti como para tu mejor amigo de cuatro patas. Pasa, siéntate y déjanos consentirlos.
+            </p>
+            <ul class="about-features">
+              <li data-i18n="about.f1">🐾 Espacio pet-friendly</li>
+              <li data-i18n="about.f2">☕ Café de especialidad</li>
+              <li data-i18n="about.f3">🦴 Menú exclusivo para perros</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><strong>4.8★</strong><span data-i18n="about.rating">Calificación</span></div>
+            <div class="stat"><strong>+30</strong><span data-i18n="about.menuItems">Productos</span></div>
+            <div class="stat"><strong>2</strong><span data-i18n="about.menus">Menús (humanos &amp; peludos)</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section id="menu" class="menu">
+        <div class="container">
+          <h2 class="section-title" data-i18n="menu.title">Nuestro menú</h2>
+          <p class="section-subtitle" data-i18n="menu.subtitle">Hecho con ingredientes frescos y mucho amor.</p>
+
+          <div class="menu-grid">
+            <!-- HUMANS -->
+            <article class="menu-card">
+              <header class="menu-card-header">
+                <h3 data-i18n="menu.humans.title">Para humanos</h3>
+                <span class="chip">👤</span>
+              </header>
+              <ul class="menu-list">
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.humans.hachiko">Sándwich Hachiko</strong>
+                    <span class="item-desc" data-i18n="menu.humans.hachikoDesc">Mozzarella, jamón serrano y pesto.</span>
+                  </div>
+                  <span class="price">$179</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.humans.snoopy">Sándwich Snoopy</strong>
+                    <span class="item-desc" data-i18n="menu.humans.snoopyDesc">Huevos revueltos, aguacate y alioli.</span>
+                  </div>
+                  <span class="price">$139</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.humans.coraje">Sándwich Coraje</strong>
+                    <span class="item-desc" data-i18n="menu.humans.corajeDesc">Cochinita pibil, frijoles y queso.</span>
+                  </div>
+                  <span class="price">$159</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.humans.funky">Chilaquiles Funky</strong>
+                    <span class="item-desc" data-i18n="menu.humans.funkyDesc">Salsas a elegir y crema casera.</span>
+                  </div>
+                  <span class="price">$119</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.humans.espresso">Espresso</strong>
+                    <span class="item-desc" data-i18n="menu.humans.espressoDesc">Doble shot intenso.</span>
+                  </div>
+                  <span class="price">$45</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.humans.latte">Latte</strong>
+                    <span class="item-desc" data-i18n="menu.humans.latteDesc">Suave, cremoso y reconfortante.</span>
+                  </div>
+                  <span class="price">$65</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- PETS -->
+            <article class="menu-card menu-card-pets">
+              <header class="menu-card-header">
+                <h3 data-i18n="menu.pets.title">Para peluditos</h3>
+                <span class="chip">🐶</span>
+              </header>
+              <ul class="menu-list">
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.pets.bagel">Bagel Relleno</strong>
+                    <span class="item-desc" data-i18n="menu.pets.bagelDesc">Relleno de res o pollo.</span>
+                  </div>
+                  <span class="price">$75</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.pets.puppychino">Puppychino</strong>
+                    <span class="item-desc" data-i18n="menu.pets.puppychinoDesc">Yogurt griego sin azúcar y crema batida.</span>
+                  </div>
+                  <span class="price">$30</span>
+                </li>
+                <li>
+                  <div class="item-name">
+                    <strong data-i18n="menu.pets.cake">Pastel Cumpleañero</strong>
+                    <span class="item-desc" data-i18n="menu.pets.cakeDesc">Pan de carne con decoración de puré.</span>
+                  </div>
+                  <span class="price">$135</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOURS -->
+      <section id="hours" class="hours">
+        <div class="container hours-inner">
+          <div class="hours-text">
+            <h2 data-i18n="hours.title">Horarios de servicio</h2>
+            <p data-i18n="hours.subtitle">Te esperamos con un cafecito recién hecho.</p>
+          </div>
+          <table class="hours-table" aria-label="Horarios">
+            <tbody>
+              <tr><td data-i18n="hours.mon">Lunes</td><td class="closed" data-i18n="hours.closed">Cerrado</td></tr>
+              <tr><td data-i18n="hours.tue">Martes</td><td class="closed" data-i18n="hours.closed">Cerrado</td></tr>
+              <tr><td data-i18n="hours.wed">Miércoles</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
+              <tr><td data-i18n="hours.thu">Jueves</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
+              <tr><td data-i18n="hours.fri">Viernes</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
+              <tr><td data-i18n="hours.sat">Sábado</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
+              <tr><td data-i18n="hours.sun">Domingo</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section id="location" class="location">
+        <div class="container">
+          <h2 class="section-title" data-i18n="location.title">¿Dónde estamos?</h2>
+          <p class="section-subtitle">
+            <span data-i18n="location.address">C. Allende 175B, Parque Metropolitano, 45010 Zapopan, Jal.</span>
+          </p>
+          <div class="map-wrapper">
+            <iframe
+              title="Chato's Cafecito Canino - Google Maps"
+              src="https://www.google.com/maps?q=C.%20Allende%20175B%2C%20Parque%20Metropolitano%2C%20Zapopan&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <h3 data-i18n="footer.project">Proyecto académico</h3>
+          <dl>
+            <div><dt data-i18n="footer.student">Alumna</dt><dd>Perla Esmeralda Cerpa Rodriguez</dd></div>
+            <div><dt data-i18n="footer.teacher">Profesor</dt><dd>Zeus Emanuel Gutierrez Cobian</dd></div>
+            <div><dt data-i18n="footer.subject">Materia</dt><dd>Desarrollo de Aplicaciones Web en la Nube y Móviles</dd></div>
+            <div><dt data-i18n="footer.calendar">Calendario</dt><dd>2026 A</dd></div>
+          </dl>
+        </div>
+        <div class="footer-logo">
+          <img src="/logo_cucei_1.webp" alt="CUCEI - Universidad de Guadalajara" />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Chato's Cafecito Canino · <span data-i18n="footer.madeWith">Hecho con cariño 🐾</span></span>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Chato's Cafecito Canino"
+version = "1.0.0"
+id = "artifacts/chatos-cafecito"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19460
+
+[services.development]
+run = "pnpm --filter @workspace/chatos-cafecito run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/chatos-cafecito", "run", "build" ]
+publicDir = "artifacts/chatos-cafecito/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19460"
+BASE_PATH = "/"
