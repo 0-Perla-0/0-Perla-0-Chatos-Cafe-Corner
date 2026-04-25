@@ -159,12 +159,15 @@ img { max-width: 100%; display: block; }
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 18px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.55);
 }
 .hero .lead {
-  color: var(--gray);
+  color: #ffffff;
   font-size: 1.08rem;
   max-width: 520px;
   margin-bottom: 28px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
