@@ -443,6 +443,16 @@ img { max-width: 100%; display: block; }
   opacity: 1;
 }
 
+/* ======= DIRECTIONS BUTTONS ======= */
+.directions-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+.directions-actions .btn { font-size: 0.95rem; }
+
 /* ======= LOCATION ======= */
 .location {
   background: var(--cream-2);
@@ -506,21 +516,12 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   align-items: center;
 }
-.footer-logo .logo-card {
-  background: var(--cream);
-  border-radius: var(--radius-md);
-  padding: 20px 28px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
 .footer-logo img {
   width: 100%;
-  max-width: 220px;
+  max-width: 240px;
   height: auto;
   display: block;
-  filter: invert(1) brightness(0.85) contrast(1.2);
+  background: transparent;
 }
 .footer-bottom {
   text-align: center;
