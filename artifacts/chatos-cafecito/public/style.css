@@ -352,6 +352,40 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
+/* ======= MENU SUBSECTIONS ======= */
+.menu-subtitle {
+  margin: 28px 0 14px;
+  padding: 8px 16px;
+  background: var(--pink);
+  color: var(--dark);
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.menu-card > .menu-subtitle:first-of-type { margin-top: 8px; }
+.menu-extras {
+  background: var(--cream-2);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  margin-top: 14px;
+  font-size: 0.88rem;
+  color: var(--gray);
+  line-height: 1.5;
+}
+.menu-extras strong { color: var(--dark); }
+.menu-extras em { font-style: normal; color: var(--pink-deep); font-weight: 700; }
+.menu-note {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--gray);
+  font-style: italic;
+}
+.menu-list-compact li { padding-bottom: 8px; gap: 8px; }
+.menu-list-compact .item-desc { font-size: 0.82rem; }
+
 /* ======= HOURS ======= */
 .hours { padding: 88px 0; }
 .hours-inner {
