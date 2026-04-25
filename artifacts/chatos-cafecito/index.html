@@ -1,310 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chato's Cafecito Canino</title>
-    <meta name="description" content="Cafetería Human-Friendly en Zapopan. Menú para humanos y peluditos." />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="container nav-content">
-        <a href="#hero" class="brand">
-          <span class="brand-mark">🐾</span>
-          <span class="brand-name">Chato's<span class="brand-sub"> Cafecito Canino</span></span>
-        </a>
-        <nav class="nav-links">
-          <a href="#about" data-i18n="nav.about">Nosotros</a>
-          <a href="#menu" data-i18n="nav.menu">Menú</a>
-          <a href="#hours" data-i18n="nav.hours">Horarios</a>
-          <a href="#gallery" data-i18n="nav.gallery">Galería</a>
-          <a href="#location" data-i18n="nav.location">Ubicación</a>
-        </nav>
-        <div class="lang-wrapper">
-          <label for="langSelect" class="sr-only" data-i18n="nav.language">Idioma</label>
-          <select id="langSelect" class="lang-select" aria-label="Language selector">
-            <!-- Filled by JS -->
-          </select>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chato's Cafecito Canino</title>
+  <meta name="description" content="Cafetería Human-Friendly en Zapopan. Menú para humanos y peluditos." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">🐾</span>
+        <span class="brand-name">Chato's<span class="brand-sub"> Cafecito Canino</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav.about">Nosotros</a>
+        <a href="#menu" data-i18n="nav.menu">Menú</a>
+        <a href="#hours" data-i18n="nav.hours">Horarios</a>
+        <a href="#gallery" data-i18n="nav.gallery">Galería</a>
+        <a href="#location" data-i18n="nav.location">Ubicación</a>
+      </nav>
+      <div class="lang-wrapper">
+        <select id="langSelect" class="lang-select"></select>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <!-- HERO -->
-      <section id="hero" class="hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería Human-Friendly</p>
-            <h1 data-i18n="hero.title">Un cafecito para ti<br />y tu peludito.</h1>
-            <p class="lead" data-i18n="hero.subtitle">
-              Sándwiches caseros, café de especialidad y un menú especial para los más consentidos de la casa.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#menu" data-i18n="hero.ctaMenu">Ver el menú</a>
-              <a class="btn btn-ghost" href="#location" data-i18n="hero.ctaVisit">Visítanos</a>
-            </div>
-          </div>
-          <div class="hero-card" aria-hidden="true">
-            <div class="paw-bg">
-              <span>🐶</span>
-              <span>☕</span>
-              <span>🥐</span>
-              <span>🐾</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="about">
-        <div class="container about-grid">
-          <div>
-            <h2 data-i18n="about.title">Sobre Chato's</h2>
-            <p data-i18n="about.body">
-              En Chato's creemos que los mejores momentos se viven en compañía. Por eso preparamos cada platillo con cariño,
-              tanto para ti como para tu mejor amigo de cuatro patas. Pasa, siéntate y déjanos consentirlos.
-            </p>
-            <ul class="about-features">
-              <li data-i18n="about.f1">🐾 Espacio Human-Friendly</li>
-              <li data-i18n="about.f2">☕ Café de especialidad</li>
-              <li data-i18n="about.f3">🦴 Menú exclusivo para perros</li>
-            </ul>
-          </div>
-          <div class="about-stats">
-            <div class="stat"><strong>4.8★</strong><span data-i18n="about.rating">Calificación</span></div>
-            <div class="stat"><strong>+30</strong><span data-i18n="about.menuItems">Productos</span></div>
-            <div class="stat"><strong>2</strong><span data-i18n="about.menus">Menús (humanos &amp; peludos)</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- MENU -->
-      <section id="menu" class="menu">
-        <div class="container">
-          <h2 class="section-title" data-i18n="menu.title">Nuestro menú</h2>
-          <p class="section-subtitle" data-i18n="menu.subtitle">Hecho con ingredientes frescos y mucho amor.</p>
-
-          <div class="menu-grid">
-            <!-- HUMANS -->
-            <article class="menu-card">
-              <header class="menu-card-header">
-                <h3 data-i18n="menu.humans.title">Para humanos</h3>
-                <span class="chip">👤</span>
-              </header>
-              <ul class="menu-list">
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.humans.hachiko">Sándwich Hachiko</strong>
-                    <span class="item-desc" data-i18n="menu.humans.hachikoDesc">Mozzarella, jamón serrano y pesto.</span>
-                  </div>
-                  <span class="price">$179</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.humans.snoopy">Sándwich Snoopy</strong>
-                    <span class="item-desc" data-i18n="menu.humans.snoopyDesc">Huevos revueltos, aguacate y alioli.</span>
-                  </div>
-                  <span class="price">$139</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.humans.coraje">Sándwich Coraje</strong>
-                    <span class="item-desc" data-i18n="menu.humans.corajeDesc">Cochinita pibil, frijoles y queso.</span>
-                  </div>
-                  <span class="price">$159</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.humans.funky">Chilaquiles Funky</strong>
-                    <span class="item-desc" data-i18n="menu.humans.funkyDesc">Salsas a elegir y crema casera.</span>
-                  </div>
-                  <span class="price">$119</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.humans.espresso">Espresso</strong>
-                    <span class="item-desc" data-i18n="menu.humans.espressoDesc">Doble shot intenso.</span>
-                  </div>
-                  <span class="price">$45</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.humans.latte">Latte</strong>
-                    <span class="item-desc" data-i18n="menu.humans.latteDesc">Suave, cremoso y reconfortante.</span>
-                  </div>
-                  <span class="price">$65</span>
-                </li>
-              </ul>
-            </article>
-
-            <!-- PETS -->
-            <article class="menu-card menu-card-pets">
-              <header class="menu-card-header">
-                <h3 data-i18n="menu.pets.title">Para peluditos</h3>
-                <span class="chip">🐶</span>
-              </header>
-              <ul class="menu-list">
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.pets.bagel">Bagel Relleno</strong>
-                    <span class="item-desc" data-i18n="menu.pets.bagelDesc">Relleno de res o pollo.</span>
-                  </div>
-                  <span class="price">$75</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.pets.puppychino">Puppychino</strong>
-                    <span class="item-desc" data-i18n="menu.pets.puppychinoDesc">Yogurt griego sin azúcar y crema batida.</span>
-                  </div>
-                  <span class="price">$30</span>
-                </li>
-                <li>
-                  <div class="item-name">
-                    <strong data-i18n="menu.pets.cake">Pastel Cumpleañero</strong>
-                    <span class="item-desc" data-i18n="menu.pets.cakeDesc">Pan de carne con decoración de puré.</span>
-                  </div>
-                  <span class="price">$135</span>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- HOURS -->
-      <section id="hours" class="hours">
-        <div class="container hours-inner">
-          <div class="hours-text">
-            <h2 data-i18n="hours.title">Horarios de servicio</h2>
-            <p data-i18n="hours.subtitle">Te esperamos con un cafecito recién hecho.</p>
-          </div>
-          <table class="hours-table" aria-label="Horarios">
-            <tbody>
-              <tr><td data-i18n="hours.mon">Lunes</td><td class="closed" data-i18n="hours.closed">Cerrado</td></tr>
-              <tr><td data-i18n="hours.tue">Martes</td><td class="closed" data-i18n="hours.closed">Cerrado</td></tr>
-              <tr><td data-i18n="hours.wed">Miércoles</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
-              <tr><td data-i18n="hours.thu">Jueves</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
-              <tr><td data-i18n="hours.fri">Viernes</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
-              <tr><td data-i18n="hours.sat">Sábado</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
-              <tr><td data-i18n="hours.sun">Domingo</td><td>8:00 a.m. – 4:00 p.m.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- GALLERY -->
-      <section id="gallery" class="gallery">
-        <div class="container">
-          <h2 class="section-title" data-i18n="gallery.title">Galería</h2>
-          <p class="section-subtitle" data-i18n="gallery.subtitle">Pequeños momentos en Chato's.</p>
-
-          <!-- Para añadir tus fotos: guarda la imagen en /public/gallery/
-               y luego sustituye el "src" por: /gallery/tu-imagen.jpg -->
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <img src="/gallery/foto-1.jpg" alt="Foto 1" loading="lazy"
-                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="/gallery/foto-2.jpg" alt="Foto 2" loading="lazy"
-                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="/gallery/foto-3.jpg" alt="Foto 3" loading="lazy"
-                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="/gallery/foto-4.jpg" alt="Foto 4" loading="lazy"
-                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="/gallery/foto-5.jpg" alt="Foto 5" loading="lazy"
-                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="/gallery/foto-6.jpg" alt="Foto 6" loading="lazy"
-                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- LOCATION -->
-      <section id="location" class="location">
-        <div class="container">
-          <h2 class="section-title" data-i18n="location.title">¿Dónde estamos?</h2>
-          <p class="section-subtitle">
-            <span data-i18n="location.address">C. Allende 175B, Parque Metropolitano, 45010 Zapopan, Jal.</span>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-carousel">
+        <div class="slide active" style="background-image: url('foto8.jpeg');"></div>
+        <div class="slide" style="background-image: url('foto9.jpeg');"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería Human-Friendly</p>
+          <h1 data-i18n="hero.title">Un cafecito para ti<br />y tu peludito.</h1>
+          <p class="lead" data-i18n="hero.subtitle">
+            Sándwiches caseros, café de especialidad y un menú especial para los más consentidos de la casa.
           </p>
-          <div class="map-wrapper">
-            <iframe
-              title="Chato's Cafecito Canino - Google Maps"
-              src="https://www.google.com/maps?q=C.%20Allende%20175B%2C%20Parque%20Metropolitano%2C%20Zapopan&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div class="directions-actions">
-            <a
-              class="btn btn-primary"
-              href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=driving"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="location.directionsCar"
-            >🚗 Cómo llegar en auto</a>
-            <a
-              class="btn btn-ghost"
-              href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=walking"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="location.directionsWalk"
-            >🚶 A pie</a>
-            <a
-              class="btn btn-ghost"
-              href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=transit"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="location.directionsTransit"
-            >🚌 Transporte</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu" data-i18n="hero.ctaMenu">Ver el menú</a>
+            <a class="btn btn-ghost" href="#location" data-i18n="hero.ctaVisit">Visítanos</a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div class="footer-info">
-          <h3 data-i18n="footer.project">Proyecto académico</h3>
-          <dl>
-            <div><dt data-i18n="footer.student">Alumna</dt><dd>Perla Esmeralda Cerpa Rodriguez</dd></div>
-            <div><dt data-i18n="footer.teacher">Profesor</dt><dd>Zeus Emanuel Gutierrez Cobian</dd></div>
-            <div><dt data-i18n="footer.subject">Materia</dt><dd>Desarrollo de Aplicaciones Web en la Nube y Móviles</dd></div>
-            <div><dt data-i18n="footer.calendar">Calendario</dt><dd>2026 A</dd></div>
-          </dl>
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div>
+          <h2 data-i18n="about.title">Sobre Chato's</h2>
+          <p data-i18n="about.body">En Chato's creemos que los mejores momentos se viven en compañía...</p>
+          <ul class="about-features">
+            <li data-i18n="about.f1">🐾 Espacio Human-Friendly</li>
+            <li data-i18n="about.f2">☕ Café de especialidad</li>
+            <li data-i18n="about.f3">🦴 Menú exclusivo para perros</li>
+          </ul>
         </div>
-        <div class="footer-logo">
-          <img src="/logo_cucei_dark.png" alt="CUCEI - Universidad de Guadalajara" />
+        <div class="about-stats">
+          <div class="stat"><strong>4.8★</strong><span data-i18n="about.rating">Calificación</span></div>
+          <div class="stat"><strong>+30</strong><span data-i18n="about.menuItems">Productos</span></div>
+          <div class="stat"><strong>2</strong><span data-i18n="about.menus">Menús</span></div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Chato's Cafecito Canino · <span data-i18n="footer.madeWith">Hecho con cariño 🐾</span></span>
-      </div>
-    </footer>
+    </section>
 
-    <script src="/script.js"></script>
-  </body>
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2 class="section-title" data-i18n="menu.title">Nuestro menú</h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <header class="menu-card-header">
+              <h3 data-i18n="menu.humans.title">Para humanos</h3>
+              <span class="chip">👤</span>
+            </header>
+            <ul class="menu-list">
+              <li><div class="item-name"><strong>Sándwich Hachiko</strong></div><span class="price">$179</span></li>
+              <li><div class="item-name"><strong>Sándwich Snoopy</strong></div><span class="price">$139</span></li>
+            </ul>
+          </article>
+          <article class="menu-card menu-card-pets">
+            <header class="menu-card-header">
+              <h3 data-i18n="menu.pets.title">Para peluditos</h3>
+              <span class="chip">🐶</span>
+            </header>
+            <ul class="menu-list">
+              <li><div class="item-name"><strong>Bagel Relleno</strong></div><span class="price">$75</span></li>
+              <li><div class="item-name"><strong>Puppychino</strong></div><span class="price">$30</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title" data-i18n="gallery.title">Galería</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="foto1.png" alt="Foto 1" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="foto2.png" alt="Foto 2" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="foto3.png" alt="Foto 3" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="foto4.png" alt="Foto 4" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="foto5.png" alt="Foto 5" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="foto6.png" alt="Foto 6" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="location">
+      <div class="container">
+        <h2 class="section-title" data-i18n="location.title">¿Dónde estamos?</h2>
+        <p class="section-subtitle">C. Allende 175B, Parque Metropolitano, Zapopan.</p>
+        <div class="map-wrapper">
+          <iframe title="Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3104642279145!2d-103.4347717!3d20.6568915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae7c52a0a205%3A0xc07a21396a56c07a!2sMetrocán!5e0!3m2!1ses!2smx!4v1714000000000" loading="lazy"></iframe>
+        </div>
+
+        <div class="directions-actions">
+          <a class="btn btn-primary"
+             href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=driving"
+             target="_blank" rel="noopener noreferrer"
+             data-i18n="location.directionsCar">🚗 Cómo llegar en auto</a>
+          <a class="btn btn-ghost"
+             href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=walking"
+             target="_blank" rel="noopener noreferrer"
+             data-i18n="location.directionsWalk">🚶 A pie</a>
+          <a class="btn btn-ghost"
+             href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=transit"
+             target="_blank" rel="noopener noreferrer"
+             data-i18n="location.directionsTransit">🚌 Transporte</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <h3 data-i18n="footer.project">ZEUS EMANUEL GUTIERREZ COBIAN</h3>
+        <p>Perla Esmeralda Cerpa Rodriguez</p>
+        <p>DESARROLLO DE APLICACIONES WEB EN LA NUBE Y MÓVILES.</p>
+        <p>Calendario 2026A</p>
+        <p>Profesor: Mtro. Zeus Emanuel Gutierrez Cobian</p>
+      </div>
+      <div class="footer-logo">
+        <img src="/cucei.webp" alt="Logo CUCEI" style="width: 150px;" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
 </html>
