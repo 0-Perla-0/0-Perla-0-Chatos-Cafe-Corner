@@ -22,6 +22,7 @@
           <a href="#about" data-i18n="nav.about">Nosotros</a>
           <a href="#menu" data-i18n="nav.menu">Menú</a>
           <a href="#hours" data-i18n="nav.hours">Horarios</a>
+          <a href="#gallery" data-i18n="nav.gallery">Galería</a>
           <a href="#location" data-i18n="nav.location">Ubicación</a>
         </nav>
         <div class="lang-wrapper">
@@ -38,7 +39,7 @@
       <section id="hero" class="hero">
         <div class="container hero-inner">
           <div class="hero-text">
-            <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería pet-friendly</p>
+            <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería Human-Friendly</p>
             <h1 data-i18n="hero.title">Un cafecito para ti<br />y tu peludito.</h1>
             <p class="lead" data-i18n="hero.subtitle">
               Sándwiches caseros, café de especialidad y un menú especial para los más consentidos de la casa.
@@ -196,6 +197,49 @@
         </div>
       </section>
 
+      <!-- GALLERY -->
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <h2 class="section-title" data-i18n="gallery.title">Galería</h2>
+          <p class="section-subtitle" data-i18n="gallery.subtitle">Pequeños momentos en Chato's.</p>
+
+          <!-- Para añadir tus fotos: guarda la imagen en /public/gallery/
+               y luego sustituye el "src" por: /gallery/tu-imagen.jpg -->
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <img src="/gallery/foto-1.jpg" alt="Foto 1" loading="lazy"
+                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
+              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/gallery/foto-2.jpg" alt="Foto 2" loading="lazy"
+                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
+              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/gallery/foto-3.jpg" alt="Foto 3" loading="lazy"
+                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
+              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/gallery/foto-4.jpg" alt="Foto 4" loading="lazy"
+                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
+              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/gallery/foto-5.jpg" alt="Foto 5" loading="lazy"
+                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
+              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="/gallery/foto-6.jpg" alt="Foto 6" loading="lazy"
+                   onerror="this.parentElement.classList.add('is-empty');this.remove();" />
+              <figcaption data-i18n="gallery.placeholder">Agrega tu imagen aquí</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <!-- LOCATION -->
       <section id="location" class="location">
         <div class="container">
@@ -229,7 +273,7 @@
           </dl>
         </div>
         <div class="footer-logo">
-          <img src="/logo_cucei_1.webp" alt="CUCEI - Universidad de Guadalajara" />
+          <img src="/logo_cucei_dark.png" alt="CUCEI - Universidad de Guadalajara" />
         </div>
       </div>
       <div class="footer-bottom">
