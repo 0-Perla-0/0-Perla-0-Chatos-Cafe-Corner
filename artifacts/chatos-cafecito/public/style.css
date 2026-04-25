@@ -395,7 +395,7 @@ img { max-width: 100%; display: block; }
 }
 .pet-photo {
   position: relative;
-  width: 75%;
+  width: 92%;
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-lg);
   overflow: hidden;
