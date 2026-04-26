@@ -77,7 +77,6 @@
         <p class="section-subtitle" data-i18n="menu.subtitle">Hecho con ingredientes frescos y mucho amor.</p>
 
         <div class="menu-grid">
-          <!-- ============== HUMANOS ============== -->
           <article class="menu-card">
             <header class="menu-card-header">
               <h3 data-i18n="menu.humans.title">Para humanos</h3>
@@ -174,7 +173,6 @@
             <p class="menu-note">¡Pregunta por los panes de la semana! 🥐</p>
           </article>
 
-          <!-- ============== PELUDITOS ============== -->
           <article class="menu-card menu-card-pets">
             <header class="menu-card-header">
               <h3 data-i18n="menu.pets.title">Para peluditos</h3>
@@ -250,27 +248,18 @@
               <li><div class="item-name"><strong>Dispensador de agua portátil</strong><span class="item-desc">500 ml</span></div></li>
             </ul>
 
-            <!-- Imágenes en zigzag para llenar el espacio -->
-            <div class="pet-photos">
-              <figure class="pet-photo pet-photo-left">
-                <img src="fotito1.jpeg" alt="Peludito 1" loading="lazy"
-                     onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-                <figcaption>🐾 Agrega tu foto</figcaption>
+            <div class="pet-photos" style="display: flex; flex-direction: column; gap: 20px; margin-top: 30px;">
+              <figure class="pet-photo" style="width: 65%; max-width: 280px; align-self: flex-start; margin-left: 5%;">
+                <img src="fotito1.jpeg" alt="Meme 1" style="width: 100%; height: auto; border-radius: 15px;" />
               </figure>
-              <figure class="pet-photo pet-photo-right">
-                <img src="fotito2.jpeg" alt="Peludito 2" loading="lazy"
-                     onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-                <figcaption>🐾 Agrega tu foto</figcaption>
+              <figure class="pet-photo" style="width: 65%; max-width: 280px; align-self: flex-end; margin-right: 5%;">
+                <img src="fotito2.jpeg" alt="Meme 2" style="width: 100%; height: auto; border-radius: 15px;" />
               </figure>
-              <figure class="pet-photo pet-photo-left">
-                <img src="fotito3.jpeg" alt="Peludito 3" loading="lazy"
-                     onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-                <figcaption>🐾 Agrega tu foto</figcaption>
+              <figure class="pet-photo" style="width: 65%; max-width: 280px; align-self: flex-start; margin-left: 5%;">
+                <img src="fotito3.jpeg" alt="Meme 3" style="width: 100%; height: auto; border-radius: 15px;" />
               </figure>
-              <figure class="pet-photo pet-photo-right">
-                <img src="fotito4.jpeg" alt="Peludito 4" loading="lazy"
-                     onerror="this.parentElement.classList.add('is-empty');this.remove();" />
-                <figcaption>🐾 Agrega tu foto</figcaption>
+              <figure class="pet-photo" style="width: 65%; max-width: 280px; align-self: flex-end; margin-right: 5%;">
+                <img src="fotito4.jpeg" alt="Meme 4" style="width: 100%; height: auto; border-radius: 15px;" />
               </figure>
             </div>
           </article>
@@ -282,24 +271,12 @@
       <div class="container">
         <h2 class="section-title" data-i18n="gallery.title">Galería</h2>
         <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="foto1.png" alt="Foto 1" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="foto2.png" alt="Foto 2" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="foto3.png" alt="Foto 3" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="foto4.png" alt="Foto 4" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="foto5.png" alt="Foto 5" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="foto6.png" alt="Foto 6" />
-          </figure>
+          <figure class="gallery-item"><img src="foto6.png" alt="Foto 1" loading="lazy" /></figure>
+          <figure class="gallery-item"><img src="foto2.png" alt="Foto 2" loading="lazy" /></figure>
+          <figure class="gallery-item"><img src="foto3.png" alt="Foto 3" loading="lazy" /></figure>
+          <figure class="gallery-item"><img src="foto1.png" alt="Foto 4" loading="lazy" /></figure>
+          <figure class="gallery-item"><img src="foto5.png" alt="Foto 5" loading="lazy" /></figure>
+          <figure class="gallery-item"><img src="foto4.png" alt="Foto 6" loading="lazy" /></figure>
         </div>
       </div>
     </section>
@@ -309,22 +286,13 @@
         <h2 class="section-title" data-i18n="location.title">¿Dónde estamos?</h2>
         <p class="section-subtitle">C. Allende 175B, Parque Metropolitano, Zapopan.</p>
         <div class="map-wrapper">
-          <iframe title="Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3104642279145!2d-103.4347717!3d20.6568915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae7c52a0a205%3A0xc07a21396a56c07a!2sMetrocán!5e0!3m2!1ses!2smx!4v1714000000000" loading="lazy"></iframe>
+          <iframe title="Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.2423714902165!2d-103.435!3d20.669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQwJzA4LjQiTiAxMDPCsDI2JzA2LjAiVw!5e0!3m2!1ses!2smx!4v1650000000000!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div class="directions-actions">
-          <a class="btn btn-primary"
-             href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=driving"
-             target="_blank" rel="noopener noreferrer"
-             data-i18n="location.directionsCar">🚗 Cómo llegar en auto</a>
-          <a class="btn btn-ghost"
-             href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=walking"
-             target="_blank" rel="noopener noreferrer"
-             data-i18n="location.directionsWalk">🚶 A pie</a>
-          <a class="btn btn-ghost"
-             href="https://www.google.com/maps/dir/?api=1&destination=C.+Allende+175B,+Parque+Metropolitano,+Zapopan&travelmode=transit"
-             target="_blank" rel="noopener noreferrer"
-             data-i18n="location.directionsTransit">🚌 Transporte</a>
+          <a class="btn btn-primary" href="#" target="_blank" data-i18n="location.directionsCar">🚗 Cómo llegar en auto</a>
+          <a class="btn btn-ghost" href="#" target="_blank" data-i18n="location.directionsWalk">🚶 A pie</a>
+          <a class="btn btn-ghost" href="#" target="_blank" data-i18n="location.directionsTransit">🚌 Transporte</a>
         </div>
       </div>
     </section>
@@ -347,14 +315,18 @@
 
   <script src="/script.js"></script>
   <script>
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-    function nextSlide() {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }
-    setInterval(nextSlide, 5000);
+    window.onload = function() {
+      const slides = document.querySelectorAll('.slide');
+      if (slides.length > 0) {
+        let currentSlide = 0;
+        function nextSlide() {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, 5000);
+      }
+    };
   </script>
 </body>
 </html>
