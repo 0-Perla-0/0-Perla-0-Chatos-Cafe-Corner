@@ -24,6 +24,7 @@
         <a href="#hours" data-i18n="nav.hours">Horarios</a>
         <a href="#gallery" data-i18n="nav.gallery">Galería</a>
         <a href="#location" data-i18n="nav.location">Ubicación</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
       <div class="lang-wrapper">
         <select id="langSelect" class="lang-select"></select>
@@ -138,194 +139,150 @@
         <h2 class="section-title" data-i18n="menu.title">Nuestro menú</h2>
         <p class="section-subtitle" data-i18n="menu.subtitle">Hecho con ingredientes frescos y mucho amor.</p>
 
-        <div class="menu-grid">
-          <article class="menu-card">
-            <header class="menu-card-header">
-              <h3 data-i18n="menu.humans.title">Para humanos</h3>
-              <span class="chip">👤</span>
-            </header>
-
-            <h4 class="menu-subtitle">☕ Bebidas calientes</h4>
-            <ul class="menu-list">
-              <li><div class="item-name"><strong>Espresso doble</strong></div><span class="price">$45</span></li>
-              <li><div class="item-name"><strong>Americano caliente</strong></div><span class="price">$55</span></li>
-              <li><div class="item-name"><strong>Chocolate caliente</strong></div><span class="price">$65</span></li>
-              <li><div class="item-name"><strong>Latte</strong></div><span class="price">$65</span></li>
-              <li><div class="item-name"><strong>Cappuccino</strong></div><span class="price">$70</span></li>
-              <li><div class="item-name"><strong>Chai</strong></div><span class="price">$70</span></li>
-              <li><div class="item-name"><strong>Dirty Chai</strong></div><span class="price">$80</span></li>
-              <li><div class="item-name"><strong>Matcha</strong><span class="item-desc">Orgánico</span></div><span class="price">$75</span></li>
-            </ul>
-
-            <h4 class="menu-subtitle">🧊 Bebidas frías</h4>
-            <ul class="menu-list">
-              <li><div class="item-name"><strong>Americano en las rocas</strong></div><span class="price">$60</span></li>
-              <li><div class="item-name"><strong>Honey Americano</strong></div><span class="price">$70</span></li>
-              <li><div class="item-name"><strong>Chocolate frío</strong><span class="item-desc">Un chocomilito</span></div><span class="price">$70</span></li>
-              <li><div class="item-name"><strong>Latte en las rocas</strong></div><span class="price">$70</span></li>
-              <li><div class="item-name"><strong>Chai</strong></div><span class="price">$75</span></li>
-              <li><div class="item-name"><strong>Dirty Chai</strong></div><span class="price">$85</span></li>
-              <li><div class="item-name"><strong>Matcha</strong><span class="item-desc">Orgánico</span></div><span class="price">$80</span></li>
-              <li><div class="item-name"><strong>Agua (1 L)</strong></div><span class="price">$20</span></li>
-              <li><div class="item-name"><strong>Fuze Tea</strong></div><span class="price">$35</span></li>
-              <li><div class="item-name"><strong>Coca-Cola</strong><span class="item-desc">Regular o Zero</span></div><span class="price">$30</span></li>
-            </ul>
-
-            <p class="menu-extras">
-              <strong>Extras:</strong>
-              Saborizante <em>$15</em> (vainilla, caramelo, moka, cinnamon roll y lavanda) ·
-              Leche de soya o almendra <em>$15</em>
-            </p>
-
-            <h4 class="menu-subtitle">🥪 Alimentos</h4>
-            <ul class="menu-list">
-              <li>
-                <div class="item-name">
-                  <strong>Sándwich "Hachiko"</strong>
-                  <span class="item-desc">Mozzarella fresca, jamón serrano y pesto con tomate cherry asado, arúgula y ajo dorado. Sobre pan crujiente con aceite de oliva y reducción de balsámico.</span>
-                </div>
-                <span class="price">$179</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Sándwich "Snoopy"</strong>
-                  <span class="item-desc">Huevitos revueltos, aguacate y alioli en pan dorado con mantequilla. Los chicharrones de jalapeño le dan el toque travieso.</span>
-                </div>
-                <span class="price">$139</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Sándwich "Goofy"</strong>
-                  <span class="item-desc">Triple combo de queso: Philadelphia, mozzarella y americano derretido en pan de hogaza. Con dip de chipotle.</span>
-                </div>
-                <span class="price">$129</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Sándwich "Coraje"</strong>
-                  <span class="item-desc">Cochinita pibil (receta de la abuela), frijoles refritos, cebolla morada encurtida y queso manchego en pan de masa madre.</span>
-                </div>
-                <span class="price">$159</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Sándwich "Bluey"</strong>
-                  <span class="item-desc">Queso brie, mermelada de moras silvestres y albahaca fresca en pan de hogaza. Con miel de abeja y balsámico.</span>
-                </div>
-                <span class="price">$149</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Chilaquiles "Funky"</strong>
-                  <span class="item-desc">Totopos con salsa a elegir, frijolitos, queso y crema. Salsas: roja, verde o cremosita de chipotle.</span>
-                </div>
-                <span class="price">$119</span>
-              </li>
-            </ul>
-
-            <p class="menu-extras">
-              <strong>Extras chilaquiles:</strong>
-              Huevo <em>$25</em> · Pollo <em>$35</em> · Cochinita <em>$45</em>
-            </p>
-
-            <h4 class="menu-subtitle">🍪 Postres</h4>
-            <ul class="menu-list">
-              <li><div class="item-name"><strong>Galletas de chispas</strong></div><span class="price">$40</span></li>
-            </ul>
-            <p class="menu-note">¡Pregunta por los panes de la semana! 🥐</p>
-          </article>
-
-          <article class="menu-card menu-card-pets">
-            <header class="menu-card-header">
-              <h3 data-i18n="menu.pets.title">Para peluditos</h3>
-              <span class="chip">🐶</span>
-            </header>
-
-            <h4 class="menu-subtitle">🍽️ Alimentos</h4>
-            <ul class="menu-list">
-              <li>
-                <div class="item-name">
-                  <strong>Bagel relleno</strong>
-                  <span class="item-desc">Rellenos de Pet's Table — res o pollo. Con brócoli, espinaca, vísceras, lentejas, zanahoria, camote, papa, plátano y Omega 3.</span>
-                </div>
-                <span class="price">$75</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Lasagna perruna</strong>
-                  <span class="item-desc">Lasaña con carne molida de res y pasta integral.</span>
-                </div>
-                <span class="price">$85</span>
-              </li>
-            </ul>
-
-            <h4 class="menu-subtitle">🦴 Snacks</h4>
-            <ul class="menu-list">
-              <li><div class="item-name"><strong>Patas de pollo deshidratadas</strong></div><span class="price">$130</span></li>
-              <li><div class="item-name"><strong>Hígado y pulmón deshidratados</strong></div><span class="price">$90</span></li>
-              <li>
-                <div class="item-name">
-                  <strong>Premios "Barky's Biscuits"</strong>
-                  <span class="item-desc">Bolsita con 100 gramos.</span>
-                </div>
-                <span class="price">$45</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Pawleta</strong>
-                  <span class="item-desc">Sabores: mantequilla de maní, frutos rojos, hígado, y pollo con verduras.</span>
-                </div>
-                <span class="price">$50</span>
-              </li>
-            </ul>
-
-            <h4 class="menu-subtitle">🥣 Bebidas y postres</h4>
-            <ul class="menu-list">
-              <li>
-                <div class="item-name">
-                  <strong>Puppychino</strong>
-                  <span class="item-desc">Café (descafeinado), yogurt griego sin azúcar, mantequilla de maní, crema batida y claras de huevo.</span>
-                </div>
-                <span class="price">$30</span>
-              </li>
-              <li>
-                <div class="item-name">
-                  <strong>Pastel cumpleañero</strong>
-                  <span class="item-desc">Pan de carne de res con puré de papa. Incluye gorro y velita. Colores: rosa o azul.</span>
-                </div>
-                <span class="price">$135</span>
-              </li>
-            </ul>
-
-            <h4 class="menu-subtitle">🎁 Accesorios</h4>
-            <p class="menu-note">Pregunta por disponibilidad y precio.</p>
-            <ul class="menu-list menu-list-compact">
-              <li><div class="item-name"><strong>Collar</strong><span class="item-desc">Talla S · M · L</span></div></li>
-              <li><div class="item-name"><strong>Correa</strong></div></li>
-              <li><div class="item-name"><strong>Pechera</strong><span class="item-desc">Talla S · M · L</span></div></li>
-              <li><div class="item-name"><strong>Platito plegable</strong></div></li>
-              <li><div class="item-name"><strong>Pelota</strong></div></li>
-              <li><div class="item-name"><strong>Rollo de bolsitas biodegradables</strong><span class="item-desc">1 pieza</span></div></li>
-              <li><div class="item-name"><strong>Dispensador de bolsitas</strong></div></li>
-              <li><div class="item-name"><strong>Dispensador de agua portátil</strong><span class="item-desc">500 ml</span></div></li>
-            </ul>
-
-            <div class="pet-photos">
-              <figure class="pet-photo pet-photo-left">
-                <img src="fotito1.jpeg" alt="Meme 1" />
-              </figure>
-              <figure class="pet-photo pet-photo-right">
-                <img src="fotito2.jpeg" alt="Meme 2" />
-              </figure>
-              <figure class="pet-photo pet-photo-left">
-                <img src="fotito3.jpeg" alt="Meme 3" />
-              </figure>
-              <figure class="pet-photo pet-photo-right">
-                <img src="fotito4.jpeg" alt="Meme 4" />
-              </figure>
-            </div>
-          </article>
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-tab="humans">👤 <span data-i18n="menu.humans.title">Para humanos</span></button>
+          <button class="menu-tab" data-tab="pets">🐶 <span data-i18n="menu.pets.title">Para peluditos</span></button>
         </div>
+
+        <div class="menu-panels">
+
+          <!-- PANEL HUMANOS -->
+          <div class="menu-panel active" id="panel-humans">
+            <div class="menu-panel-grid">
+              <div class="menu-col">
+                <h4 class="menu-subtitle">☕ Bebidas calientes</h4>
+                <ul class="menu-list">
+                  <li><div class="item-name"><strong>Espresso doble</strong></div><span class="price">$45</span></li>
+                  <li><div class="item-name"><strong>Americano caliente</strong></div><span class="price">$55</span></li>
+                  <li><div class="item-name"><strong>Chocolate caliente</strong></div><span class="price">$65</span></li>
+                  <li><div class="item-name"><strong>Latte</strong></div><span class="price">$65</span></li>
+                  <li><div class="item-name"><strong>Cappuccino</strong></div><span class="price">$70</span></li>
+                  <li><div class="item-name"><strong>Chai</strong></div><span class="price">$70</span></li>
+                  <li><div class="item-name"><strong>Dirty Chai</strong></div><span class="price">$80</span></li>
+                  <li><div class="item-name"><strong>Matcha</strong><span class="item-desc">Orgánico</span></div><span class="price">$75</span></li>
+                </ul>
+
+                <h4 class="menu-subtitle">🧊 Bebidas frías</h4>
+                <ul class="menu-list">
+                  <li><div class="item-name"><strong>Americano en las rocas</strong></div><span class="price">$60</span></li>
+                  <li><div class="item-name"><strong>Honey Americano</strong></div><span class="price">$70</span></li>
+                  <li><div class="item-name"><strong>Chocolate frío</strong><span class="item-desc">Un chocomilito</span></div><span class="price">$70</span></li>
+                  <li><div class="item-name"><strong>Latte en las rocas</strong></div><span class="price">$70</span></li>
+                  <li><div class="item-name"><strong>Chai</strong></div><span class="price">$75</span></li>
+                  <li><div class="item-name"><strong>Dirty Chai</strong></div><span class="price">$85</span></li>
+                  <li><div class="item-name"><strong>Matcha</strong><span class="item-desc">Orgánico</span></div><span class="price">$80</span></li>
+                  <li><div class="item-name"><strong>Agua (1 L)</strong></div><span class="price">$20</span></li>
+                  <li><div class="item-name"><strong>Fuze Tea</strong></div><span class="price">$35</span></li>
+                  <li><div class="item-name"><strong>Coca-Cola</strong><span class="item-desc">Regular o Zero</span></div><span class="price">$30</span></li>
+                </ul>
+                <p class="menu-extras"><strong>Extras:</strong> Saborizante <em>$15</em> (vainilla, caramelo, moka, cinnamon roll, lavanda) · Leche de soya o almendra <em>$15</em></p>
+              </div>
+
+              <div class="menu-col">
+                <h4 class="menu-subtitle">🥪 Sándwiches</h4>
+                <ul class="menu-list">
+                  <li>
+                    <div class="item-name"><strong>Sándwich "Hachiko"</strong><span class="item-desc">Mozzarella fresca, jamón serrano y pesto con tomate cherry asado, arúgula y ajo dorado.</span></div>
+                    <span class="price">$179</span>
+                  </li>
+                  <li>
+                    <div class="item-name"><strong>Sándwich "Snoopy"</strong><span class="item-desc">Huevitos revueltos, aguacate y alioli en pan dorado. Con chicharrones de jalapeño.</span></div>
+                    <span class="price">$139</span>
+                  </li>
+                  <li>
+                    <div class="item-name"><strong>Sándwich "Goofy"</strong><span class="item-desc">Triple queso: Philadelphia, mozzarella y americano derretido. Con dip de chipotle.</span></div>
+                    <span class="price">$129</span>
+                  </li>
+                  <li>
+                    <div class="item-name"><strong>Sándwich "Coraje"</strong><span class="item-desc">Cochinita pibil (receta de la abuela), frijoles, cebolla morada encurtida y queso manchego.</span></div>
+                    <span class="price">$159</span>
+                  </li>
+                  <li>
+                    <div class="item-name"><strong>Sándwich "Bluey"</strong><span class="item-desc">Queso brie, mermelada de moras y albahaca fresca. Con miel de abeja y balsámico.</span></div>
+                    <span class="price">$149</span>
+                  </li>
+                </ul>
+
+                <h4 class="menu-subtitle">🍳 Platillos</h4>
+                <ul class="menu-list">
+                  <li>
+                    <div class="item-name"><strong>Chilaquiles "Funky"</strong><span class="item-desc">Totopos con salsa a elegir, frijolitos, queso y crema. Salsas: roja, verde o chipotle.</span></div>
+                    <span class="price">$119</span>
+                  </li>
+                </ul>
+                <p class="menu-extras"><strong>Extras chilaquiles:</strong> Huevo <em>$25</em> · Pollo <em>$35</em> · Cochinita <em>$45</em></p>
+
+                <h4 class="menu-subtitle">🍪 Postres</h4>
+                <ul class="menu-list">
+                  <li><div class="item-name"><strong>Galletas de chispas</strong></div><span class="price">$40</span></li>
+                </ul>
+                <p class="menu-note">¡Pregunta por los panes de la semana! 🥐</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PANEL PELUDITOS -->
+          <div class="menu-panel" id="panel-pets">
+            <div class="menu-panel-grid">
+              <div class="menu-col">
+                <h4 class="menu-subtitle">🍽️ Alimentos</h4>
+                <ul class="menu-list">
+                  <li>
+                    <div class="item-name"><strong>Bagel relleno</strong><span class="item-desc">Rellenos de Pet's Table — res o pollo. Con brócoli, espinaca, vísceras, lentejas, zanahoria, camote, plátano y Omega 3.</span></div>
+                    <span class="price">$75</span>
+                  </li>
+                  <li>
+                    <div class="item-name"><strong>Lasagna perruna</strong><span class="item-desc">Lasaña con carne molida de res y pasta integral.</span></div>
+                    <span class="price">$85</span>
+                  </li>
+                </ul>
+
+                <h4 class="menu-subtitle">🦴 Snacks</h4>
+                <ul class="menu-list">
+                  <li><div class="item-name"><strong>Patas de pollo deshidratadas</strong></div><span class="price">$130</span></li>
+                  <li><div class="item-name"><strong>Hígado y pulmón deshidratados</strong></div><span class="price">$90</span></li>
+                  <li><div class="item-name"><strong>Premios "Barky's Biscuits"</strong><span class="item-desc">Bolsita con 100 gramos.</span></div><span class="price">$45</span></li>
+                  <li><div class="item-name"><strong>Pawleta</strong><span class="item-desc">Sabores: maní, frutos rojos, hígado, pollo con verduras.</span></div><span class="price">$50</span></li>
+                </ul>
+
+                <h4 class="menu-subtitle">🥣 Bebidas y postres</h4>
+                <ul class="menu-list">
+                  <li>
+                    <div class="item-name"><strong>Puppychino</strong><span class="item-desc">Café descafeinado, yogurt griego sin azúcar, mantequilla de maní, crema batida y claras de huevo.</span></div>
+                    <span class="price">$30</span>
+                  </li>
+                  <li>
+                    <div class="item-name"><strong>Pastel cumpleañero</strong><span class="item-desc">Pan de carne con puré de papa. Incluye gorro y velita. Rosa o azul.</span></div>
+                    <span class="price">$135</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu-col">
+                <h4 class="menu-subtitle">🎁 Accesorios</h4>
+                <p class="menu-note">Pregunta por disponibilidad y precio.</p>
+                <ul class="menu-list menu-list-compact">
+                  <li><div class="item-name"><strong>Collar</strong><span class="item-desc">Talla S · M · L</span></div></li>
+                  <li><div class="item-name"><strong>Correa</strong></div></li>
+                  <li><div class="item-name"><strong>Pechera</strong><span class="item-desc">Talla S · M · L</span></div></li>
+                  <li><div class="item-name"><strong>Platito plegable</strong></div></li>
+                  <li><div class="item-name"><strong>Pelota</strong></div></li>
+                  <li><div class="item-name"><strong>Rollo de bolsitas biodegradables</strong><span class="item-desc">1 pieza</span></div></li>
+                  <li><div class="item-name"><strong>Dispensador de bolsitas</strong></div></li>
+                  <li><div class="item-name"><strong>Dispensador de agua portátil</strong><span class="item-desc">500 ml</span></div></li>
+                </ul>
+
+                <div class="pet-photos">
+                  <figure class="pet-photo pet-photo-left"><img src="fotito1.jpeg" alt="Meme 1" /></figure>
+                  <figure class="pet-photo pet-photo-right"><img src="fotito2.jpeg" alt="Meme 2" /></figure>
+                  <figure class="pet-photo pet-photo-left"><img src="fotito3.jpeg" alt="Meme 3" /></figure>
+                  <figure class="pet-photo pet-photo-right"><img src="fotito4.jpeg" alt="Meme 4" /></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /menu-panels -->
       </div>
     </section>
 
@@ -386,6 +343,52 @@
         </div>
       </div>
     </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="about-label" data-i18n="contact.label">Escríbenos</span>
+            <h2 data-i18n="contact.title">¿Tienes alguna duda o quieres visitarnos?</h2>
+            <p data-i18n="contact.body">Cuéntanos qué necesitas — si quieres reservar una mesa, preguntar sobre el menú o simplemente saludar. Te respondemos pronto.</p>
+            <ul class="contact-details">
+              <li>📍 C. Allende 175B, Parque Metropolitano, Zapopan</li>
+              <li>🕘 Mar–Vie: 9:00–19:00 · Sáb: 9:00–20:00 · Dom: 9:00–18:00</li>
+              <li>🐾 Perros siempre bienvenidos</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name" data-i18n="contact.name">Nombre</label>
+                <input type="text" id="cf-name" name="name" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-email" data-i18n="contact.email">Correo electrónico</label>
+                <input type="email" id="cf-email" name="email" placeholder="tu@correo.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-type" data-i18n="contact.type">Tipo de visita</label>
+              <select id="cf-type" name="type">
+                <option value="" data-i18n="contact.typeDefault">Selecciona una opción</option>
+                <option value="mesa" data-i18n="contact.typeMesa">Reservar mesa</option>
+                <option value="cumple" data-i18n="contact.typeCumple">Cumpleaños perruno 🎂</option>
+                <option value="info" data-i18n="contact.typeInfo">Información general</option>
+                <option value="otro" data-i18n="contact.typeOtro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cf-msg" data-i18n="contact.message">Mensaje</label>
+              <textarea id="cf-msg" name="message" rows="4" placeholder="Cuéntanos..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="contact.send">Enviar mensaje →</button>
+            <p class="form-success" id="formSuccess" data-i18n="contact.success">¡Mensaje enviado! Te contactamos pronto. 🐾</p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -409,6 +412,7 @@
   <script src="/script.js"></script>
   <script>
     window.onload = function() {
+      // Hero carousel
       const slides = document.querySelectorAll('.slide');
       if (slides.length > 0) {
         let currentSlide = 0;
@@ -418,6 +422,35 @@
           slides[currentSlide].classList.add('active');
         }
         setInterval(nextSlide, 5000);
+      }
+
+      // Menu tabs
+      const tabs = document.querySelectorAll('.menu-tab');
+      const panels = document.querySelectorAll('.menu-panel');
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          tabs.forEach(function(t) { t.classList.remove('active'); });
+          panels.forEach(function(p) { p.classList.remove('active'); });
+          tab.classList.add('active');
+          var target = document.getElementById('panel-' + tab.dataset.tab);
+          if (target) target.classList.add('active');
+        });
+      });
+
+      // Contact form
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('formSuccess');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (form.checkValidity()) {
+            success.classList.add('visible');
+            form.reset();
+            setTimeout(function() { success.classList.remove('visible'); }, 5000);
+          } else {
+            form.reportValidity();
+          }
+        });
       }
     };
   </script>
