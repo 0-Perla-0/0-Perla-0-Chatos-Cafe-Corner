@@ -394,6 +394,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  align-items: stretch;
 }
 .menu-card {
   background: var(--bg-card);
@@ -483,11 +484,11 @@ img { max-width: 100%; display: block; }
   margin-top: 36px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 28px;
 }
 .pet-photo {
   position: relative;
-  width: 78%;
+  width: 52%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--bg-light);
