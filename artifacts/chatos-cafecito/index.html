@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
@@ -32,14 +32,16 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section id="hero" class="hero">
       <div class="hero-carousel">
-        <div class="slide active" style="background-image: url('foto8.jpeg');"></div>
+        <div class="slide active" style="background-image: url('hero-pro.png');"></div>
+        <div class="slide" style="background-image: url('foto8.jpeg');"></div>
         <div class="slide" style="background-image: url('foto9.jpeg');"></div>
       </div>
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería Human-Friendly</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Cafetería Human-Friendly · Zapopan</p>
           <h1 data-i18n="hero.title">Un cafecito para ti<br />y tu peludito.</h1>
           <p class="lead" data-i18n="hero.subtitle">
             Sándwiches caseros, café de especialidad y un menú especial para los más consentidos de la casa.
@@ -52,27 +54,87 @@
       </div>
     </section>
 
+    <!-- FEATURE STRIP -->
+    <div class="feature-strip">
+      <div class="container">
+        <div class="feature-strip-inner">
+          <div class="feature-item">
+            <div class="feature-icon">🐾</div>
+            <div>
+              <h4 data-i18n="feature.petFriendly">Espacio Human-Friendly</h4>
+              <p data-i18n="feature.petFriendlyDesc">Tu perro es bienvenido, siempre.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">☕</div>
+            <div>
+              <h4 data-i18n="feature.coffee">Café de especialidad</h4>
+              <p data-i18n="feature.coffeeDesc">Granos seleccionados, preparación con amor.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🦴</div>
+            <div>
+              <h4 data-i18n="feature.petMenu">Menú para peluditos</h4>
+              <p data-i18n="feature.petMenuDesc">Alimentos naturales pensados para ellos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
     <section id="about" class="about">
       <div class="container about-grid">
         <div>
+          <span class="about-label" data-i18n="about.label">Nuestra historia</span>
           <h2 data-i18n="about.title">Sobre Chato's</h2>
-          <p data-i18n="about.body">En Chato's creemos que los mejores momentos se viven en compañía...</p>
+          <p data-i18n="about.body">En Chato's creemos que los mejores momentos se viven en compañía. Por eso creamos un espacio donde tú y tu mejor amigo peludo pueden disfrutar juntos de un buen café, un sándwich casero y mucho amor.</p>
           <ul class="about-features">
             <li data-i18n="about.f1">🐾 Espacio Human-Friendly</li>
             <li data-i18n="about.f2">☕ Café de especialidad</li>
             <li data-i18n="about.f3">🦴 Menú exclusivo para perros</li>
           </ul>
+          <div class="about-stats">
+            <div class="stat"><strong>4.8★</strong><span data-i18n="about.rating">Calificación</span></div>
+            <div class="stat"><strong>+30</strong><span data-i18n="about.menuItems">Productos</span></div>
+            <div class="stat"><strong>2</strong><span data-i18n="about.menus">Menús</span></div>
+          </div>
         </div>
-        <div class="about-stats">
-          <div class="stat"><strong>4.8★</strong><span data-i18n="about.rating">Calificación</span></div>
-          <div class="stat"><strong>+30</strong><span data-i18n="about.menuItems">Productos</span></div>
-          <div class="stat"><strong>2</strong><span data-i18n="about.menus">Menús</span></div>
+        <div class="about-img-wrap">
+          <img src="about-pro.png" alt="Interior del café" loading="lazy" />
         </div>
       </div>
     </section>
 
+    <!-- FEATURED -->
+    <section class="featured">
+      <div class="container">
+        <span class="section-label" data-i18n="featured.label">Lo que nos hace únicos</span>
+        <h2 class="section-title" data-i18n="featured.title">Hecho con amor</h2>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="food-pro.png" alt="Café y postres" loading="lazy" />
+            <div class="featured-card-overlay">
+              <span data-i18n="featured.badge1">Para humanos</span>
+              <h3 data-i18n="featured.card1">Café de especialidad &amp; sándwiches</h3>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="pets-pro.png" alt="Comida para perros" loading="lazy" />
+            <div class="featured-card-overlay">
+              <span data-i18n="featured.badge2">Para peluditos</span>
+              <h3 data-i18n="featured.card2">Menú 100% natural para tu perro</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
     <section id="menu" class="menu">
       <div class="container">
+        <span class="section-label" data-i18n="menu.label">Lo que ofrecemos</span>
         <h2 class="section-title" data-i18n="menu.title">Nuestro menú</h2>
         <p class="section-subtitle" data-i18n="menu.subtitle">Hecho con ingredientes frescos y mucho amor.</p>
 
@@ -120,42 +182,42 @@
               <li>
                 <div class="item-name">
                   <strong>Sándwich "Hachiko"</strong>
-                  <span class="item-desc">Mozzarella fresca, jamón serrano y pesto con tomate cherry asado, arúgula y ajo dorado. Sobre pan crujiente con aceite de oliva y reducción de balsámico. Un clásico elegante y fiel.</span>
+                  <span class="item-desc">Mozzarella fresca, jamón serrano y pesto con tomate cherry asado, arúgula y ajo dorado. Sobre pan crujiente con aceite de oliva y reducción de balsámico.</span>
                 </div>
                 <span class="price">$179</span>
               </li>
               <li>
                 <div class="item-name">
                   <strong>Sándwich "Snoopy"</strong>
-                  <span class="item-desc">Huevitos revueltos, aguacate y una untadita de alioli en pan dorado con mantequilla. Los chicharrones de jalapeño le dan el toque travieso. El desayuno ideal para empezar el día con una pancita feliz.</span>
+                  <span class="item-desc">Huevitos revueltos, aguacate y alioli en pan dorado con mantequilla. Los chicharrones de jalapeño le dan el toque travieso.</span>
                 </div>
                 <span class="price">$139</span>
               </li>
               <li>
                 <div class="item-name">
                   <strong>Sándwich "Goofy"</strong>
-                  <span class="item-desc">Triple combo de queso: Philadelphia, mozzarella y americano derretido en pan de hogaza mantequillado y dorado. Acompañado de un dip de chipotle que le da el toque final.</span>
+                  <span class="item-desc">Triple combo de queso: Philadelphia, mozzarella y americano derretido en pan de hogaza. Con dip de chipotle.</span>
                 </div>
                 <span class="price">$129</span>
               </li>
               <li>
                 <div class="item-name">
                   <strong>Sándwich "Coraje"</strong>
-                  <span class="item-desc">Cochinita pibil jugosa (receta de la abuela), frijoles refritos, cebolla morada encurtida y queso manchego derretido en pan de masa madre dorado con mantequilla. Casero, lleno de carácter y reconfortante.</span>
+                  <span class="item-desc">Cochinita pibil (receta de la abuela), frijoles refritos, cebolla morada encurtida y queso manchego en pan de masa madre.</span>
                 </div>
                 <span class="price">$159</span>
               </li>
               <li>
                 <div class="item-name">
                   <strong>Sándwich "Bluey"</strong>
-                  <span class="item-desc">Queso brie cremosito, mermelada de moras silvestres y albahaca fresca se derriten entre pan de hogaza dorado con mantequilla. Un toque de miel de abeja y balsámico lo hacen irresistible.</span>
+                  <span class="item-desc">Queso brie, mermelada de moras silvestres y albahaca fresca en pan de hogaza. Con miel de abeja y balsámico.</span>
                 </div>
                 <span class="price">$149</span>
               </li>
               <li>
                 <div class="item-name">
                   <strong>Chilaquiles "Funky"</strong>
-                  <span class="item-desc">Totopos crujientes bañados con la salsa de tu preferencia, frijolitos refritos, queso rallado y crema por encima. ¡Un clásico con actitud, funky y sabrosón! Salsas: roja, verde, cremosita de chipotle.</span>
+                  <span class="item-desc">Totopos con salsa a elegir, frijolitos, queso y crema. Salsas: roja, verde o cremosita de chipotle.</span>
                 </div>
                 <span class="price">$119</span>
               </li>
@@ -184,14 +246,14 @@
               <li>
                 <div class="item-name">
                   <strong>Bagel relleno</strong>
-                  <span class="item-desc">Rellenos de Pet's Table — opciones: res o pollo. Con: brócoli, espinaca, vísceras (hígado, corazón y bofe), lentejas, zanahoria, camote, papa, plátano y aceite de pescado (Omega 3).</span>
+                  <span class="item-desc">Rellenos de Pet's Table — res o pollo. Con brócoli, espinaca, vísceras, lentejas, zanahoria, camote, papa, plátano y Omega 3.</span>
                 </div>
                 <span class="price">$75</span>
               </li>
               <li>
                 <div class="item-name">
                   <strong>Lasagna perruna</strong>
-                  <span class="item-desc">Deliciosa lasaña con carne molida de res y pasta integral.</span>
+                  <span class="item-desc">Lasaña con carne molida de res y pasta integral.</span>
                 </div>
                 <span class="price">$85</span>
               </li>
@@ -229,7 +291,7 @@
               <li>
                 <div class="item-name">
                   <strong>Pastel cumpleañero</strong>
-                  <span class="item-desc">Tamaño individual: pan de carne de res con decoración de puré de papa. Incluye gorro y velita. Colores: rosa o azul.</span>
+                  <span class="item-desc">Pan de carne de res con puré de papa. Incluye gorro y velita. Colores: rosa o azul.</span>
                 </div>
                 <span class="price">$135</span>
               </li>
@@ -267,9 +329,36 @@
       </div>
     </section>
 
+    <!-- HOURS -->
+    <section id="hours" class="hours">
+      <div class="container">
+        <div class="hours-inner">
+          <div class="hours-text">
+            <span class="about-label" data-i18n="hours.label">Visítanos</span>
+            <h2 data-i18n="hours.title">Horarios</h2>
+            <p data-i18n="hours.subtitle">Te esperamos con los brazos (y las patitas) abiertos.</p>
+          </div>
+          <table class="hours-table" aria-label="Horarios">
+            <tbody>
+              <tr><td data-i18n="hours.mon">Lunes</td><td class="closed" data-i18n="hours.closed">Cerrado</td></tr>
+              <tr><td data-i18n="hours.tue">Martes</td><td>9:00 – 19:00</td></tr>
+              <tr><td data-i18n="hours.wed">Miércoles</td><td>9:00 – 19:00</td></tr>
+              <tr><td data-i18n="hours.thu">Jueves</td><td>9:00 – 19:00</td></tr>
+              <tr><td data-i18n="hours.fri">Viernes</td><td>9:00 – 20:00</td></tr>
+              <tr><td data-i18n="hours.sat">Sábado</td><td>9:00 – 20:00</td></tr>
+              <tr><td data-i18n="hours.sun">Domingo</td><td>9:00 – 18:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
     <section id="gallery" class="gallery">
       <div class="container">
+        <span class="section-label" data-i18n="gallery.label">Momentos</span>
         <h2 class="section-title" data-i18n="gallery.title">Galería</h2>
+        <p class="section-subtitle" data-i18n="gallery.subtitle">Cada visita, un recuerdo.</p>
         <div class="gallery-grid">
           <figure class="gallery-item"><img src="foto6.png" alt="Foto 1" loading="lazy" /></figure>
           <figure class="gallery-item"><img src="foto2.png" alt="Foto 2" loading="lazy" /></figure>
@@ -281,14 +370,15 @@
       </div>
     </section>
 
+    <!-- LOCATION -->
     <section id="location" class="location">
       <div class="container">
+        <span class="section-label" data-i18n="location.label">Encuéntranos</span>
         <h2 class="section-title" data-i18n="location.title">¿Dónde estamos?</h2>
         <p class="section-subtitle">C. Allende 175B, Parque Metropolitano, Zapopan.</p>
         <div class="map-wrapper">
-          <iframe title="Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.2423714902165!2d-103.435!3d20.669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQwJzA4LjQiTiAxMDPCsDI2JzA2LjAiVw!5e0!3m2!1ses!2smx!4v1650000000000!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe title="Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.2423714902165!2d-103.435!3d20.669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQwJzA4LjQiTiAxMDPCsDI2JzA2LjAiVw!5e0!3m2!1ses!2smx!4v1650000000000!5m2!1ses!2smx" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
         <div class="directions-actions">
           <a class="btn btn-primary" href="#" target="_blank" data-i18n="location.directionsCar">🚗 Cómo llegar en auto</a>
           <a class="btn btn-ghost" href="#" target="_blank" data-i18n="location.directionsWalk">🚶 A pie</a>
@@ -301,15 +391,18 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-info">
-        <h3 data-i18n="footer.project">ZEUS EMANUEL GUTIERREZ COBIAN</h3>
+        <h3 data-i18n="footer.project">Proyecto Académico</h3>
         <p>Perla Esmeralda Cerpa Rodriguez</p>
-        <p>DESARROLLO DE APLICACIONES WEB EN LA NUBE Y MÓVILES.</p>
+        <p>Desarrollo de Aplicaciones Web en la Nube y Móviles</p>
         <p>Calendario 2026A</p>
         <p>Profesor: Mtro. Zeus Emanuel Gutierrez Cobian</p>
       </div>
       <div class="footer-logo">
-        <img src="/cucei.webp" alt="Logo CUCEI" style="width: 150px;" />
+        <img src="/cucei.webp" alt="Logo CUCEI" />
       </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Chato's Cafecito Canino · Zapopan, Jalisco</p>
     </div>
   </footer>
 

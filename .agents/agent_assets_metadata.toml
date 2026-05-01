@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "8tqwj7PyxWxGgDTdS55T7"
+uri = "file://artifacts/chatos-cafecito/public/hero-pro.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "hqN0uIgHOj0-FkYPXuT8A"
+uri = "file://artifacts/chatos-cafecito/public/about-pro.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "duR9yFzKk5Qq0xqeQLdFW"
+uri = "file://artifacts/chatos-cafecito/public/food-pro.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "G2RABsc8gro7UpLeTJb7q"
+uri = "file://artifacts/chatos-cafecito/public/pets-pro.png"
+type = "image"
+title = "generated_image"
