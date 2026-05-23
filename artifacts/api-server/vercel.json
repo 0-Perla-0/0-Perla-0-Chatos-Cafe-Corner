@@ -1,4 +1,5 @@
 {
+  "buildCommand": "pnpm --filter @workspace/api-server run build",
   "rewrites": [
     { "source": "/(.*)", "destination": "/api" }
   ]
